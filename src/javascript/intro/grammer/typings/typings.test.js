@@ -35,6 +35,5 @@ Test('object typings', t => {
 Test('Fluffy the Cat typings', t => {
   t.truthy(Assignment.Cat)
   t.is(Assignment.Cat instanceof Object, true)
-  t.is(Assignment.Cat, Assignment.Fluffy)
+  t.truthy(Assignment.Cat, Assignment.Fluffy)
 });
-
