@@ -16,5 +16,3 @@ Test('number literal', t => {
   t.is(typeof(Assignment.meaningOfLife), 'number');
   t.is(Assignment.meaningOfLife, 42);
 });
-
-
