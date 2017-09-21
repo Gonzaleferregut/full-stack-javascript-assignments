@@ -31,10 +31,10 @@ export const numbersAsString = numbers.join();
 
 export const countdown = Array.from(numbers).reverse();
 
-export const names = people.map(function() {
-  return developer.name;
+export const names = people.map(peep => {
+  return peep.name;
 })
 
-export const peopleWithGender = people.map(function(person) {
+export const peopleWithGender = people.map(person => {
   return Object.assign(person, {gender: 'male'});
 })
