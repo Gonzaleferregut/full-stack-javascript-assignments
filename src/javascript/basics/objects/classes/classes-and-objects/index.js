@@ -5,24 +5,28 @@ export const FACTIONS = {
 
 export class Robot {
   constructor (name, faction) {
-    this._name = name;
-    this._faction = faction;
-    this._power = 1000;
+    this.name = name;
+    this.faction = faction;
+    this.power = 1000;
   }
 
   greet() {
-    return `Hi, I'm ${this._name}`;
+    return `Hi, I'm ${this.name}`;
   }
 }
 
 export class OptimusPrime extends Robot {
   constructor() {
-    super('Optimus Prime', FACTIONS.Autobots)
+    super('Optimus Prime', FACTIONS.Autobots);
   }
 }
 
 export class Megatron extends Robot {
   constructor() {
-    super('Megatron', FACTIONS.Decepticons)
+    super('Megatron', FACTIONS.Decepticons);
   }
 }
+
+let op = new OptimusPrime();
+let mega = new Megatron();
+console.log(mega.greet());
