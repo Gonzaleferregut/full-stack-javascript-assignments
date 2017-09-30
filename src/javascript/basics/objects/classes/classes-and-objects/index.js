@@ -27,6 +27,7 @@ export class Megatron extends Robot {
   }
 }
 
-let op = new OptimusPrime();
-let mega = new Megatron();
-console.log(mega.greet());
+export default {
+    megatron: new Megatron(),
+    optimusPrime: new OptimusPrime()
+}
